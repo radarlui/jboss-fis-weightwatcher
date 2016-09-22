@@ -19,7 +19,7 @@
   <camelContext xmlns="http://camel.apache.org/schema/spring">
   	<restConfiguration component="jetty" port="9191" bindingMode="json"/>
   
-  	<rest path="/weightwatcher2">
+  	<rest path="/weightwatcher">
 	    <get uri="/addParticipant/{userid}/{username}/{target}/{start}/{low}/{high}">
 	      <to uri="direct:addParticipant"/>
 	    </get>
